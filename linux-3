@@ -1,0 +1,72 @@
+LINUX DAY-3
+
+DIRECTORIES :
+To change directory : cd foldername
+To get the present working directory : pwd
+To go to root directory : cd (or) cd ~
+To go back to previous folder : cd -
+To go to one step back folder : cd ../
+To go back to 2 steps back : cd ../../
+To create a directory inside a directory : mkdir folder1/folder2
+To check the list of files & folders in folder1 : ll folder1
+To create parenting directories : mkdir -p folder1/folder2/folder3/folder4
+To create a file inside a folder : touch foldername/filename
+
+COPY COMMAND: cp source destination
+command: cp file1 file2
+explination: data from file1 copes to file2
+If we use this command the data will gets overwrite from file2, To avoid that we can use cat
+command
+cat file1 >> file2 -----> this command will only copies the data, it will not overwrite the data
+Copy the file to directory : cp filename directory
+
+MOVE COMMAND: mv source destination
+command : mv file1 file2
+
+We will use this command to rename the file as well
+Move the file to directory : mv filename directory
+
+To compare multiple files at a time : cmp file1 file2
+To get the difference from multiple files : diff file1 file2
+
+ANALYSIS ABOUT THE FILE:
+-rw-r--r-- 1 root root 41 Sep 19 15:46 aws
+
+TYPE OF THE FILE:
+Regular files : - (hyphen)
+Directory files : d
+Character files : c
+Blocked files : b
+
+PERMISSIONS OF A FILE:
+r : read ----> 4
+w : write ----> 2
+x : execute -----> 1
+hyphen (-) : nothing -----> 0
+
+user permissions : rw- : 4 + 2 + 0 = 6
+group permissions : r-- : 4 + 0 + 0 = 4
+others permissions : r-- : 4 + 0 + 0 = 4
+--------------------------------------------------
+
+overall file permissions : 644
+--------------------------------------------------
+example:
+-w- : 0 + 2 + 0 = 2
+rw- : 4 + 2 + 0 = 6
+--x : 0 + 0 + 1 = 1
+
+ACCESS CONTROL LIST:
+Here ACL should be 1 for the file
+ACL should be 2 for the folder
+
+OWNERS OF A FILE (root root)
+root : user
+root : group
+
+NO OF CHARACTERS IN A FILE (41)
+
+FILE CREATION DETAILS :
+Sep 19 15:46
+
+FILE NAME : (aws)
