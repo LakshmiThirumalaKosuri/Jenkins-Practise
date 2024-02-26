@@ -1,0 +1,67 @@
+LINUX DAY-1
+
+There are different types of commands in linux:
+
+Whenever you connect with instance, we logging as ec2-user,
+Ec2-user is the default user in amazon-linux
+But we have to login as root user
+Because Root user is the ultimate king of the linux
+to login from ec2-user to root user
+commands:
+sudo -i (or) sudo su -
+sudo = super user do
+To logout from root user
+command: exit
+
+SYSTEM COMMANDS:
+uname : used to get OS of our instance
+uname -r : used to get kernel version of OS
+uname -a : used to get full information of OS
+uptime : used to get since how long our server is in running state
+System commands
+Hardware commands
+Network commands
+File commands
+Search Commands
+User commands
+Permission commands
+
+uptime -p : it displays only time
+uptime -s : it displays about date & time of our system run time
+hostname : used to get hostname of the system
+hostname -i : used to private ip address of a system
+ip addr : used to private ip address of a system
+ip route : used to private ip address of a system
+ifconfig : used to private ip address of a system
+hostnamectl set-hostname tcs-swiggy-dev : used to change hostname
+date : used to display todays date
+date +”%d” : it displays only date
+date +”%m” : it displays only month
+date +”%y” : it displays only year
+date +”%H” : it displays only hours
+date +”%M” : it displays only Minutes
+date +”%S” : it displays only seconds
+date +”%D” : it displays date (mm/dd/yyyy)
+date +”%F” : it displays date (yyyy-mm-dd)
+date +”%A” : it displays only day of the week
+date +”%B” : it displays only month of the year
+timedatectl : used to get timezone of our system
+timedatectl set-timezone Asia/Koklata : used to set Indian timezone for our system
+whoami : used to display in which user we loggin
+who : displays the no of users login info
+
+HARDWARE COMMANDS:
+
+cat /proc/cpuinfo : used to get cpuinfo
+cat ------> is a linux command which is used the read the data in a file
+/proc ---> it a directory which contains processor of our system
+cpuinfo -----> it a file which contains cpu info
+
+lscpu : used to get cpuinfo
+
+cat /proc/meminfo : used to get RAM info about our system
+free : used to get RAM info in KB
+free -m : used to get RAM info in MB
+
+df -h : used to get storage info about our system
+fdisk -l : used to get list volumes attached to our system
